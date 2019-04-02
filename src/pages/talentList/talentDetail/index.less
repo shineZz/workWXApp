@@ -1,0 +1,99 @@
+
+
+.talent-detail{
+    h3{
+        font-size: @title;
+    }
+    h2{
+        font-size: @title-big;
+    }
+}
+.title,.info,.job,.project,.education,.intention,.evaluate {
+    margin-left: @px10;
+    margin-right: @px10;
+    padding-top: @px10;
+    font-size: @fs12;
+}
+
+.evaluate {
+    padding-bottom: 80px;
+}
+
+h3::before {
+    content: '';
+    display: inline-block;
+    margin-right: @px3;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px @gray5;
+    background: #009DD9;
+}
+
+.content {
+    margin-left: @px15;
+}
+
+.no-data {
+    margin-left: @px15;
+}
+
+.divide {
+    display: inline-block;
+    margin: 0 @px3;
+    font-style: normal;
+}
+
+.info {
+    margin-top: @px15;
+
+    span {
+        display: inline-block;
+        margin-right: @px10;
+    }
+}
+
+.intention {
+    margin-top: @px15;
+
+    em {
+        display: inline-block;
+        width: 25%;
+        vertical-align: top;
+        font-style: normal;
+    }
+    span{
+        display: inline-block;
+        width: 73%;
+    }
+}
+
+.job {
+    margin-top: @px15;
+}
+
+.bottem-button {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    background: @white;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .weui-btn.weui-btn_primary {
+        &:not(.weui-btn_disabled):active {
+            background-color: rgb(78, 130, 170);
+        }
+
+        &::after {
+            border: none;
+            border-radius: 0;
+        }
+    }
+}

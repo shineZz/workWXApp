@@ -1,0 +1,124 @@
+.customer-md{
+    .company-all{
+        background: #fff;
+        margin-bottom: @px15;
+        article{
+            padding:@px10 @px15;
+            display: flex;
+            align-items:center;
+            .weui-icon{
+                font-size: @fs16;
+                display: block;
+            }
+            section{
+                position: relative;
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:1;
+                padding-right: 15px;
+                font-size: @fs16;
+                
+            }
+            .arrow:after {
+                content: " ";
+                display: inline-block;
+                height: 6px;
+                width: 6px;
+                border-width: 2px 2px 0 0;
+                border-color: @c-arrow;
+                border-style: solid;
+                -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                position: relative;
+                top: -2px;
+                position: absolute;
+                top: 50%;
+                margin-top: -4px;
+                right: 2px;
+            }
+        }
+    }
+}
+.customer-fd{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    z-index: 100;
+    .btn-sub{
+        width:100px;
+        height: 70px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            line-height: 27px;
+        }
+    }
+    .touxiang{
+        flex: 1;
+        height: 70px;
+        overflow: hidden;
+        overflow-x: auto;
+        ul{
+            height: 70px;
+            box-sizing: border-box;
+            padding-left:15px ;
+            padding-top:7px;
+            padding-bottom:7px;
+            li{
+                width:50px;
+                height: 60px;
+                margin-right: 5px;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                p{
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+                aside{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10em;
+                    color:  @white;
+                    text-align: center;
+                    margin-left: 5px;
+                    font-size:12px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        border-radius: 10em;
+                    }
+                    span{
+                        padding:0 2px;
+                        overflow: hidden;
+                        display:block;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                        white-space: pre-line;
+                        line-height: @head-small;
+                    }
+                    .wk{
+                        line-height: 1.3em;
+                        margin-top: 5px;
+                        font-size:11px;
+                    }
+                }
+            }
+        }
+    }
+}
+footer.customer-fd:before {
+    border-top: 1px solid #D7D6DC !important;
+}

@@ -1,0 +1,66 @@
+// 导航
+.home {
+  overflow: hidden;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color:#dc3912, #ff9900, #109618
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin:15px 12.5px 0;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  background: @blue;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 33.3%;
+    height: 26px;
+    margin: 2px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, .3);
+    transition: all ease 500ms;
+  }
+
+  a {
+    position: relative;
+    z-index: 5;
+    width: 33.3%;
+    list-style: none;
+    color: #fff;
+  }
+}
+
+.menu0::before {
+  left: 0;
+}
+
+.menu1::before {
+  left: 33.3%;
+}
+
+.menu2::before {
+  left: 66.6%;
+  margin-left: -2px;
+}
+
+.fn-mt5{
+  padding-top:@px5;
+}
+.fn-mt15{
+  padding-top:@px15;
+}

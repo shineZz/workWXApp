@@ -1,0 +1,1 @@
+export const UPLOADBTN = 'UPLOADBTN';

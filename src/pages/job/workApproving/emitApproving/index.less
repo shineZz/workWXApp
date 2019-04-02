@@ -1,0 +1,78 @@
+.els {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+.emitApproving{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box2{
+    li{
+        box-sizing: border-box;
+        padding: @px8 0 0 @px10;
+        background: #ffffff;
+    }
+}
+
+.emitApproving-list{
+    width:100%;
+    display: flex;
+    padding-bottom: @px8;
+    .img-box{
+        width:50px;
+        overflow: hidden;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        img{
+            width: @head-small;
+            height: @head-small;
+            border-radius: 50%;
+        }
+    }
+    .emitApproving-center{
+        width:55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 0 @px5;
+        font-size:@fs16;
+        line-height: 16px;
+        .name {
+            .els;
+        }
+
+        .date{
+            font-size: @fs13;
+            .els;
+            color: #999;
+        }
+    }
+    .emitApproving-right{
+        margin-right: @px10;
+        width: 90px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-size:@fs14;
+        color: #999;
+    }
+}
+
+.badge-box {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    left: 100%;
+    z-index: 111;
+}

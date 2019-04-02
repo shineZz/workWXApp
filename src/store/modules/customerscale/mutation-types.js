@@ -1,0 +1,1 @@
+export const GET_CUSTOMER_SCALE = 'GET_CUSTOMER_SCALE'

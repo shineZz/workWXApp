@@ -1,0 +1,15 @@
+export const CIRCELIST = 'CIRCELIST';
+export const CLEAR_CIRCELIST = 'CLEAR_CIRCELIST';
+export const PRAISE = 'PRAISE';
+export const CLEAR_PRAISE = 'CLEAR_PRAISE';
+export const ADDCOMMENT = 'ADDCOMMENT';
+export const CLEAR_ADDCOMMENT = 'CLEAR_ADDCOMMENT';
+export const ADDREPLY = 'ADDREPLY';
+export const CLEAR_ADDREPLY = 'CLEAR_ADDREPLY';
+export const DELMESSAGE = 'DELMESSAGE';
+export const CLEAR_DELMESSAGE = 'CLEAR_DELMESSAGE';
+export const ADDMESSAGE = 'ADDMESSAGE';
+export const CLEARMESSAGE = 'CLEARMESSAGE';
+
+
+

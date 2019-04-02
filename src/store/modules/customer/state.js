@@ -1,0 +1,33 @@
+const  state={
+    nearbyCustomerListData:{},
+    chooseCustomerListData:{},
+    customersLists: {},
+    searchKeyword: {},
+    delSearchKeyword: {},
+    workList: {},
+    addOneCustomer: {},
+    editCustomer: {},
+    getProperty: {},
+    getDetail: {},
+    updateStage: {},
+    updateSegment: {},
+    updateSource: {},
+    updatelabel: {},
+    updateShare: {},
+    deleteCustomers: {},
+    addShare: {},
+    changeBelong: {},
+    myCustomerLists: {},
+    shareCustomerLists: {},
+    unPerfectCustomerList: {},
+    getKeyContent: {},
+    customerGroupData:{},
+    wxContact: {},
+    seaCustomerLists:{},
+    seaCusAuditRecordLists: {},
+    saveSeaCustomerAudit: {},
+    giveupCustomer: {},
+}
+
+
+export default state

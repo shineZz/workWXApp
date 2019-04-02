@@ -1,0 +1,18 @@
+export const QUERYAPPROVAL = 'QUERYAPPROVAL';
+export const PROCESSLIST = 'PROCESSLIST';
+export const CLEAR_PROCESSLIST = 'CLEAR_PROCESSLIST';
+export const VIEWPROCESS = 'VIEWPROCESS';
+export const BTNAPPROVAL = 'BTNAPPROVAL';
+export const ADDAPPROVAL = 'ADDAPPROVAL';
+export const CLEAR_BTNAPPROVAL = 'CLEAR_BTNAPPROVAL';
+
+
+
+
+
+
+
+
+
+
+

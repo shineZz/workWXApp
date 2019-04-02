@@ -1,0 +1,97 @@
+.statementDetail{   
+    .has-read{
+        box-sizing: border-box;
+        padding: 0 @px10 ;
+        min-height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            width: 25%;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: @px10;
+            img{
+                width: @head-small;
+                height: @head-small;
+                border-radius: 60px;
+            }
+            p{
+                text-align: center;
+                font-size: @fs14;
+                margin-top: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+            }
+        }
+
+    }
+    .comment-top-title{
+        padding: @px15 @px10;
+        font-size: @fs13;
+        overflow: hidden;
+        .hasStatus{
+            float: left;
+            color: @gray3;
+        }
+        .comment-icon{
+            float: right;
+            color: @blue;
+            img{
+                float: left;
+                margin-right:5px;
+                height: 17px;
+                width: 17px;
+            }
+        }
+    }
+    .comment-box{
+        .comment-list{
+            box-sizing: border-box;
+            padding: 0 @px10 @px10;
+            display: flex;
+            aside{
+                margin-right: @px10;
+                img{
+                    width:@head-small;
+                    height:@head-small;
+                    border-radius: 10em;
+                }
+            }
+            section{
+                flex-grow:1;    
+                padding-bottom: 10px;            
+                div{
+                    margin-bottom:@px5;
+                    color: @gray3;
+                    strong{
+                        font-size: @fs14;                        
+                        margin-right:@px20;
+                        font-weight: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        max-width:7em;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    time{
+                        font-size: @fs12;
+                    }
+                }
+                p{
+                    font-size: @content;
+                    word-break: break-all;
+                    white-space: pre-line;
+                }
+            }
+        }
+    }
+}
+.comments-btn{
+    padding:0 @px15 @px10 @px15;
+}

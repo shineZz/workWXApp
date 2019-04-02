@@ -1,0 +1,144 @@
+.releaseTask{
+    .weui-cells__title{
+        overflow: hidden;
+        margin-top: 0.3em; 
+        margin-bottom: 0.3em; 
+        img{
+            width:20px;
+            height: 20px;
+        }
+        
+    }
+    .vux-x-icon {
+        fill: #c8c8cd;
+    }
+    .weui-cell__hd .width7 .weui-label{
+        width:80px !important;
+    }
+    .weui-cell__hd .weui-label{
+        width:80px !important;
+    }
+    .hasVal .weui-cell__ft{
+        color:#333;
+    }
+}
+.releaseTask{
+    width:100%;
+    height: 100%;
+    
+    .myels{
+        box-sizing: border-box;
+        padding: @px10 @px10 @px10 @px15;
+        width:100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        div.myelsTitle{
+            width: 80px;
+            font-size: 16px;
+        }
+        div.myelsContent{
+            flex: 1;
+            .mylistA{
+                padding: 0;
+                section{
+                    font-size: 12px;
+                    .myfd{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        width: 99%;
+                        span{
+                            display: inline-block;
+                            // border: 1px solid @br-common;
+                            margin: 2px @px10 0 0;
+                            padding:0 10px;
+                            border-radius: @radius5;
+                            background: @blue;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .noContent{
+                font-size: 16px;
+                color: @gray3;
+            }
+            
+        }
+        .myelsIcon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .submit-btn{
+        position: absolute;
+        bottom: 0px;
+    }
+    .header-img{
+        .header{
+            height: 88px;
+            float: left;
+            display: flex;
+            padding-left:@px15;
+            justify-content: center;
+            align-items: center;
+            span {
+                display: block;
+                box-sizing: border-box;
+                padding: 5px 8px;
+                width: 60px;
+                height: 60px;
+                // border-radius: 50%;
+                text-align: center;
+                color: #fff;
+                background: @blue;
+            }
+
+            img{
+                width:60px;
+                height: 60px;
+                // border-radius: 50%;
+            }
+        }
+    }
+    .icon-help{
+        float:right;
+        fill: #6ca5d9;
+    }
+}
+
+.releaseTask input,.releaseTask .weui-cell__ft,.releaseTask .vux-popup-picker-select {
+    text-align: left !important;
+}
+
+.releaseTask .weui-label,.releaseTask .vux-label {
+    width: 5em !important;
+}
+
+.releaseTask .width6 .weui-label {
+    width: 6em !important;
+}
+
+.releaseTask .width7 .weui-label {
+    width: 7em !important;
+}
+
+.releaseTask .nowidth .vux-label {
+    width: 100% !important;
+}
+
+.releaseTask .disabled{
+    color: #000 !important;
+    text-fill-color:#000 !important;
+}
+.releaseTask .has input[disabled] {
+    color: #333 !important;
+    opacity: 1;
+    -webkit-text-fill-color: #333 !important;
+    -webkit-opacity: 1;
+
+}

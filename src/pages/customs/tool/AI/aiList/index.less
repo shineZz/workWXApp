@@ -1,0 +1,93 @@
+
+
+.ai-list{
+    ul{
+        padding:@px10 @px10 0;
+    }
+    li{
+        overflow: hidden;
+        h6{
+            font-size: @fs14;
+            font-weight: normal;
+            margin-bottom: @px10;
+            padding: 0 @px10;
+        }
+        .time-title{
+            text-align: center;
+            time{
+                padding:0 @px10; 
+                border-radius:@radius5;
+                background: @blue; 
+                color: @white;
+                display:inline-block;  
+            }
+            
+        }
+        a{
+            background:@white;        
+            border-radius:@radius5;
+            border: 1px solid #ccc;   
+            font-size: @fs12;
+            margin-bottom: @px10;
+            display: block;
+            color:@black2;
+            section{
+                padding: @px10;
+                h5{
+                    font-weight: normal;
+                    font-size: @fs14;
+                    color: @black;
+                    word-break: break-all;
+                    line-height: 16px;
+                    margin-bottom: @px5;
+                }
+               
+                dl{
+                    display:flex;
+                    dt{
+                        margin-right: 2px;
+                    }
+                    dd{
+                        flex: 1;
+                        word-break: break-all;
+                    }
+                }
+                p{
+                    font-size: 11px;
+                    margin-top: @px5
+                }
+                
+            }
+        }
+        
+        footer {
+            padding:@px5  @px10;
+            display:block;
+            color: @gray3;
+            font-size: @fs14;
+            position: relative;
+            
+        }
+        .ai-link{
+            footer:after{
+                content: " ";
+                display: inline-block;
+                height: 6px;
+                width: 6px;
+                border-width: 2px 2px 0 0;
+                border-color: @c-arrow;
+                border-style: solid;
+                -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                position: relative;
+                top: -2px;
+                position: absolute;
+                top: 50%;
+                margin-top: -3px;
+                right: 14px;
+            }
+        }
+       
+    } 
+    
+}

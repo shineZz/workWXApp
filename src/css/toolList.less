@@ -1,0 +1,192 @@
+
+
+.tool-list{
+    ul{
+        padding:@px10 @px10 0;
+    }
+    li{
+        h6{
+            font-size: @fs14;
+            font-weight: normal;
+            line-height: 30px;
+            padding: 0 @px10;
+        }
+        .time-title{
+            text-align: center;
+            time{
+                padding:0 @px10; 
+                border-radius:@radius5;
+                background: @blue; 
+                color: @white;
+                display:inline-block; 
+                line-height: 20px; 
+            }
+            
+        }
+        article{
+            background:@white;        
+            border-radius:@radius5;
+            border: 1px solid #ccc;   
+            font-size: @fs12;
+            margin-bottom: @px10;
+            section{
+                padding: @px10;
+                header{
+                    font-size: @fs14;
+                    display:flex;
+                    justify-content:space-between;
+                    line-height: 16px;
+                    margin-bottom: @px5;
+                    h5{
+                        font-weight: normal;
+                        font-size: @fs14;
+                        color: #000;
+                        flex: 1;
+                        word-break: break-all;
+                    }
+                    p{
+                        margin-left: @px5;
+                    }
+                    .ui-text-gary{
+                        color: @gray3;
+                    }
+                }
+                .it-cont{
+                    color: @gray3;
+                }
+                .it-commission{
+                    display: flex;
+                    justify-content: space-between;
+                    i{
+                        // display: -webkit-box;
+                        font-style: normal;
+                        // max-width: 33%;
+                        // overflow: hidden;
+                        // text-overflow: ellipsis;
+                        // -webkit-line-clamp: 2;
+                        // -webkit-box-orient: vertical;
+                    }
+                }
+                .it-time{
+                    line-height: 16px;
+                    margin-bottom:@px5;
+                }
+                dl{
+                    display:flex;
+                    align-items:center;
+                    dt{
+                        padding: @px5;
+                        
+                        border-radius: 10em;
+                        i{
+                           
+                            width: 20px;
+                            height: 20px;
+                            display: block;
+                            
+                         }
+
+                    }
+                    dd{
+                        flex: 1;
+                        display:flex;
+                        align-items:center;
+                        overflow: hidden;
+                        
+                        p{
+                            flex: 1;
+                            word-break: break-all;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        div{
+                            margin-left: @px5;
+                        }
+                    }
+                }
+                .icon52-1-1{
+                    dd{
+                        font-size: @fs14;
+                    }
+                    i{
+                        background:url(~@/images/tool/sign1-2.png) no-repeat;
+                        background-size: cover;
+                    }
+                } 
+                .icon52-1-2{
+                    dd{
+                        font-size: @fs14;
+                    }
+                    i{
+                        background:url(~@/images/tool/sign1-1.png) no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .icon52-2 i{
+                    background:url(~@/images/tool/icon52-2.png) no-repeat;
+                    background-size: cover;
+                }
+                .icon52-3 i{
+                    background:url(~@/images/tool/icon52-3.png) no-repeat;
+                    background-size: cover;
+                }
+                .icon52-4 i{
+                    background:url(~@/images/tool/icon52-4.png) no-repeat;
+                    background-size: cover;
+                }
+                
+            }
+            .miniBtn{
+                width:70px;
+                line-height: 30px;
+            }
+        }
+        
+        .footer-link a{
+            padding:@px5  @px10;
+            display:block;
+            color: @gray3;
+            font-size: @fs14;
+            position: relative;
+            &:after{
+                content: " ";
+                display: inline-block;
+                height: 6px;
+                width: 6px;
+                border-width: 2px 2px 0 0;
+                border-color: @c-arrow;
+                border-style: solid;
+                -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                position: relative;
+                top: -2px;
+                position: absolute;
+                top: 50%;
+                margin-top: -3px;
+                right: 14px;
+            }
+        }
+        .footer-btn{
+            padding:0 @px10;
+            font-size: @fs14;
+            display: flex;
+            justify-content:space-between;
+                    align-items:center;
+            p{
+                color: @gray3;
+                line-height: 31px;
+            }
+            button{
+                padding:0 @px10;
+                margin:0 0 0 @px5;
+                line-height: 18px;
+                display: block;
+            }
+            .btn-box{
+                display: flex;
+            }
+        }
+    } 
+    
+}

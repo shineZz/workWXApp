@@ -1,0 +1,266 @@
+.user-footer {
+    padding:0 @px15;
+   dl{
+       display: flex;
+       justify-content: space-between;
+       height: 36px;
+       line-height:36px;
+       dt a{
+            color: @blue
+       }
+       dd a{
+        color: @red
+        }
+   }
+   .hd{
+       text-align: right;
+       height: 36px;
+       line-height:36px;
+       a{
+           color: @gray3
+       }
+   }
+}
+.login-head{
+    img{
+        width: 100%;
+        display: block;
+        height: 200px;
+    }
+}
+.login-reg{
+    background: url(~@/images/user/reg-bg.jpg) repeat ;
+    background-size: cover;
+    padding: @px15 0 30px;
+    margin-bottom: -15px;
+    justify-content:center;
+    display: flex;
+    img{
+        height: 100px;
+        display: block;
+    }
+}
+div.weui-vcode{
+    padding:0 0 0  @px15;
+    height: 45px;
+    button{
+        height: 45px;
+        display: inline-block;
+        border-radius:0;
+        line-height:45px;
+        font-size:@fs14;
+        padding: 0;
+        width: 120px;
+    }
+}
+
+// 已注册 resetPwd
+.registered {
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 5px 0 10px 20px;
+
+    p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        font-size: 13px;
+        color: #666;
+
+        i {
+            display: inline-block;
+            margin-right: 30px;
+            width: 15px;
+            height: 15px;
+            background-size: 100% 100%;
+    
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        span {
+            display: inline-block;
+            width: 80%;
+        }
+    }
+}
+
+.icon1 {
+    background-image: url(~@/images/login/login_update@2x.png);
+}
+
+.icon2 {
+    background-image: url(~@/images/login/login_account@2x.png);
+}
+
+.icon3 {
+    background-image: url(~@/images/login/login_kefu@2x.png);
+}
+
+.flex-item {
+    margin: 0 10px;
+    a {
+        color: #fff;
+    }
+}
+// 企业入驻 register
+.check-box {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 100px;
+
+    &:first-of-type {
+        margin-right: 60px;
+    }
+}
+
+.check-item {
+    font-size: 16px;
+    i {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        border: 2px solid red;
+        border-radius: 50%;
+        vertical-align: text-bottom;
+    }
+}
+
+.check-box-selected {
+    i::before {
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: red;
+    }
+}
+
+.agree {
+    margin-top: 10px;
+    margin-left: 20px;
+
+    a {
+        color: @blue;
+    }
+}
+// 体验
+.experience {
+    .registered {
+        // margin: 0;
+        // margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .user-footer {
+        padding-top: 10px;
+    }
+}
+
+.scroll {
+    margin-top: 10px;
+    padding: 15px 20px;
+    background: #fff;
+
+    h4 {
+        font-weight: normal;
+        color: #666;
+    }
+}
+
+.scroll-box {
+    position: relative;
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: 90px;
+}
+
+.scroll-item.box-item {
+    display:inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    padding-top: 17px;
+    border: 0.5px solid @gray4;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+
+    p {
+        font-size: 14px;
+        color: #999;
+    }
+
+    &:first-child {
+        margin-left: 5px;
+    }
+
+    img {
+        height: 30px;
+    }
+
+    i {
+        display: none;
+        position: absolute;
+        bottom: -3px;
+        right: -4px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ffffff url(../../images/job/agreed.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.scroll-item-selected.box-item {
+    background: @blue;
+    border: 0.5px solid @blue;
+
+    p {
+        color: #fff;
+    }
+
+    i {
+        display: block;
+    }
+}
+
+.vux-checker-box {
+    margin-top: 10px;
+}
+
+.item {
+    position: relative;
+    width: 141px;
+    height: 100px;
+    border-radius: 5px;
+
+    i {
+        display: none;
+        position: absolute;
+        bottom: -3px;
+        right: -4px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ffffff url(../../images/job/agreed.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.item-selected {
+    i {
+        display: block;
+    }
+}

@@ -1,0 +1,98 @@
+.router-box {
+    padding-bottom: 0;
+}
+
+.edit {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 19px;
+  height: 20px;
+  background: url(~@/images/custom/customer/customPage/edit.png);
+  background-size: 100%;
+}
+  
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  background: #232731;
+  background-size: 100%;
+  color: #fff;
+
+  p {
+    margin-top: 5px;
+    font-size: 16px;
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .company {
+    min-height: 22px;
+    margin-top: 0px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+aside{
+  width: @head-size;
+  height: @head-size;
+  border-radius: 10em;
+  color:  @white;
+  text-align: center;
+  font-size:16px;
+  img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 10em;
+  }
+  span{
+      padding:0 2px;
+      overflow: hidden;
+      display:block;
+      word-wrap:break-word;
+      word-break:break-all;
+      white-space: pre-line;
+      line-height: @head-size;
+  }
+  .wk{
+      line-height: 1.3em;
+      padding-top: 10px;
+      font-size: 16px;
+  }
+}
+.c-1{
+    background: #bb86cc;
+}
+.c-2{
+    background: #00bdd1;
+}
+.c-3{
+    background: #4a9dfb;
+}
+
+.hasBorder.weui-btn::after {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+// 弹出框
+.popup {
+    width: 100%;
+    height:100%;
+    background-color:@bg-color;
+    overflow: hidden;
+
+    .pop-btn {
+        position: absolute;
+        bottom: 0; 
+        width: 100%;
+    }
+}

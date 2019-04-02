@@ -1,0 +1,1 @@
+export const GET_CCARD = 'GET_CCARD'

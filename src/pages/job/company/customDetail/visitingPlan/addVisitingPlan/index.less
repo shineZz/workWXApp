@@ -1,0 +1,85 @@
+.tabbar-top{
+    background: #fff;
+    height: 58px;
+    position:fixed;
+    top:0;
+    &:before{
+        border-top: 0;
+    }
+    .icon {
+        width: 27px;
+        height: 27px;
+        display: inline-block;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        &.icon-promote {
+            background-image: url(~@/images/toolbar/cart.png) !important;
+        }
+        &.icon-category {
+            background-image: url(~@/images/toolbar/my.png) !important;
+        }
+        
+    }
+   
+}
+.tabbar-mian{
+    margin-top: 58px;
+}
+
+.addVisitingPlan{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    overflow-y: auto;
+    .addVisitingPlan-header{
+        width: 100%;
+        position: absolute;
+        top:0;
+        height: 30px;
+        background:#efeff4 ;
+    }
+    .addVisitingPlan-content{
+        width:100%;
+        position: absolute;
+        top:0;
+        bottom:37px;
+    }
+    
+    .add-btn-box{
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        height: 37px;
+    }
+    .member-box{
+        box-sizing: border-box;
+        padding: @px15;
+        width:100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-start;
+        flex-wrap: wrap;
+        div{
+            width:25%;
+            overflow: hidden;
+            
+            margin-bottom: @px10;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width:60px;
+                height: 60px;
+                border-radius: 200px;
+            }
+        }
+    }
+}
+

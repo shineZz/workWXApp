@@ -1,0 +1,187 @@
+
+.works-box{
+    display: flex;
+    padding: @px10 @px15;
+    background: @white;
+    aside{
+        margin-right: @px10;
+        img {
+            width: @head-small;
+            height: @head-small;
+            border-radius: 10em;
+        }
+    }
+    section{
+        flex-grow: 1;
+    }
+    h6{
+        font-weight: normal;
+        color: @blue;
+        margin-bottom: @px4;
+        font-size: @title;
+    }
+    .it-cont{
+        margin-bottom: @px5;
+        p{
+            color: @black2;
+            font-size:@content;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            display: box;
+            -webkit-box-orient: vertical;            
+            line-height: 1.3em;
+            word-wrap:break-word;
+            word-break:break-all;
+            white-space: pre-line;
+        }
+        .cont-show{
+            -webkit-line-clamp: 3;
+        }
+        a{
+            color:@blue;
+            margin-top: @px3;
+            display: block;
+        }
+    }
+    .it-img{
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap:wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+        >div{
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        img{
+            display: block;
+            max-height: 270px;
+            max-width:100%;
+            min-height: 60px;
+            min-width:60px;
+        }
+    }
+    .it-img-box2{
+        > div{
+            width: 50%;
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .it-img-box3{        
+        > div{
+            width: 33.33%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .attachment{
+        margin-top: 3px;
+        a{
+            color: @black2;
+            font-size: @fs14;
+            strong{
+                color: @red2;
+                font-weight: normal;
+            }
+        }
+    }
+    dl{
+        display: flex;
+        display: -webkit-flex;
+        justify-content:space-between;
+        align-items:center;
+        color: @gray3;
+        font-size: @fs10;
+        margin-top: @px3;
+        a{
+            color: @gray3;
+            padding-left:6px;
+        }
+        time{
+            vertical-align: middle;
+            font-size: @fs14;
+        }
+        i{
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: @px2;
+            
+        }
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: @fs14;
+        }
+        .icon-delete{
+            background: url('~@/images/work/icon-delete.png') center/cover;
+        }
+        .icon-comments{
+            background: url('~@/images/work/icon-comments.png') center /cover;
+        }
+        .icon-praise{
+            background: url('~@/images/work/icon-praise.png') center /cover;
+        }
+        .cur .icon-praise{
+            background: url('~@/images/work/icon-praise2.png') center /cover;
+        }
+    }
+    .comments-all{
+        position: relative;
+        background: @gray6;
+        margin-top: @px15;
+        transition: all .3s ease;
+        .part-icon-arrow{
+            position: absolute; width: 0; height: 0; overflow: hidden; border: 8px dashed transparent; display: block; 
+            border-bottom:8px solid @gray6;
+            top:-16px;
+            left:8px;
+            
+        }
+        .hd{
+            display: flex;
+            display:-webkit-flex;
+            padding: @px2 @px5;
+            .icon-heart{
+                background: url('~@/images/work/icon-heart.png') center;
+                background-size: cover;
+                width: 12px;
+                height: 12px;
+                margin:4px 3px ;
+                display: block;
+            }
+            p{
+                flex-grow: 1;
+                font-weight: normal;
+                font-size: @fs10;
+                color: @blue;
+                line-height: 1.2em;
+                padding: 3px 0 3px 2px;
+            }
+        }
+        .bd{
+            padding:@px5 @px5 @px2 @px5;
+            li{
+                margin-bottom: @px3;
+                word-wrap:break-word;
+                word-break:break-all;
+            }
+            strong{
+                color: @blue;
+                font-weight: normal;
+            }
+        }
+    }
+}
+.comments-btn{
+    padding: 0 15px 10px;
+}
+.comments-btn button{
+    font-size:14px;
+}

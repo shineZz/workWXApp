@@ -1,0 +1,84 @@
+
+
+.voice-all{
+    background: @white;
+    .voice-head{
+        padding: @px10 0;
+        text-align: center;
+        font-size: @fs14;         
+    }
+    #audio{
+        width: 100%;
+    }
+}
+.chat-record{
+    padding:0 @px10 @px15 @px10;
+    overflow: hidden;
+    article{
+        display: flex;
+        margin-top: @px15;
+        section{
+            flex: 1;
+            display:flex;
+            
+            .arrow{
+                position: absolute; width: 0; height: 0; overflow: hidden; border: 7px dashed transparent; display: block;
+            }
+            position: relative;
+            div{
+                border-radius: @radius5;
+                padding:8px 10px;
+                // max-width: 60%;
+                background: #eee;
+                color: #666;
+                line-height: 24px;
+                word-wrap:break-word;
+                word-break:break-all;
+                white-space: pre-line;
+            }
+        }
+    }
+    .record-r {
+        section{
+            justify-content: flex-end;
+           
+        }
+        aside{
+            margin-left: @px10;
+        }
+        .arrow{
+            border-left:7px solid #eee;
+            right:-14px;
+            top: 11px;
+        }
+        section{
+            margin-left: 50px;
+        }
+        
+    }
+    .record-l{
+        aside{
+            margin-right: @px10;
+        }
+        .arrow{
+            border-right:7px solid#eee;
+            left: -14px;
+            top: 11px;
+        }
+        section{
+            margin-right: 50px;
+        }
+
+    } 
+    aside{
+       
+        img{
+            height:@head-small;
+            width: @head-small;
+            display: block;
+            border-radius: 10em;
+            border: 1px solid #eee;
+        }
+    }
+
+}

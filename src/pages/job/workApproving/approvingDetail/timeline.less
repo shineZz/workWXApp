@@ -1,0 +1,92 @@
+.timeline-all {
+    .vux-timeline{
+        padding:1rem 2rem;
+    }
+    .vux-timeline-item-color{
+        background:url(~@/images/job/loading.png) no-repeat;
+        width: 18px;
+        height: 18px;
+        background-size: cover;
+        left: -4px;
+    }
+    
+    .vux-timeline-item-checked.weui-icon-success-no-circle::before{
+        display: none;
+    }
+    .vux-timeline-item-tail{
+        width: 1px;
+        background-color:#e0e0e0;
+    }
+    .timeline-box{
+        background: @white;
+        border: 1px solid #e0e0e0;
+        
+        position: relative;
+        margin-left:@px5;
+        border-radius: 5px;
+        time{
+            color:@gray3;
+            font-size: @fs10;
+            position: absolute;
+            right: 5px;
+            top: 2px;
+        }
+        article{            
+            display: flex;
+            padding: @px12;
+        }
+        aside{
+            margin-right: @px8;
+            img{
+                height: @head-small;
+                width: @head-small;
+                display: block;
+                border-radius: 10em;
+            }
+        }
+        section{
+            flex-grow:1;
+            h4{
+                font-size: @title;
+                font-weight: normal;
+            }
+            p{
+                color: @gray3
+            }
+        }
+        footer{
+            color: @gray3;
+            padding:@px5 @px12;
+            word-break: break-all;
+            white-space: pre-line;
+        }
+    }
+    .refuse{
+        .vux-timeline-item-color{
+            background:url(~@/images/job/refuse.png) no-repeat;
+            background-size: cover;
+        }
+        section p{
+            color: @red
+        }
+    }
+    .return{
+        .vux-timeline-item-color{
+            background:url(~@/images/job/return.png) no-repeat;
+            background-size: cover;
+        }
+        section p{
+            color: @orange
+        }
+    }
+    .agreed {
+        .vux-timeline-item-color{
+            background:url(~@/images/job/agreed.png) no-repeat;
+            background-size: cover;
+        }
+        section p{
+            color: @green
+        }
+
+    } 
+}

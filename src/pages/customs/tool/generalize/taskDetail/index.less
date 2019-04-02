@@ -1,0 +1,117 @@
+.taskDetail{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .taskDetail-content{
+        position: absolute;
+        top:0;
+        bottom: 36px;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .myPositionBtn{
+        position: absolute;
+        bottom: 0;
+        height: 36px;
+    }
+    // background: #fff;
+    p{
+        text-align: center;
+        height: 30px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .videoWindow{
+        box-sizing: border-box;
+        padding: @px10;
+        
+        div.videoBox{
+            width:100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px dashed #bfbfbf;
+            
+           .upload-add{
+                fill: #ccc;
+           }
+        }
+    }
+    .videoCover{
+        box-sizing: border-box;
+        padding: @px10;
+        
+        div.coverBox{
+            width:100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px dashed #bfbfbf;
+            img{
+                width:64px;
+                height: 64px;
+            }
+        }
+    }
+}
+.video-all{
+    h5{
+        text-align: center;
+        height: 30px;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    article{
+        margin:@px10;
+        section{
+            width: 300px;
+            height: 165px;
+            border: 1px solid #bfbfbf;
+            margin:0 auto;
+            position: relative;
+        }
+        .video-he{
+            // height:100%;
+            width:100%;
+        }
+        img,video{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        span{
+            color: @blue;
+            position: absolute;
+            top: -28px;
+            right: 4px;
+            font-size: @fs12;
+        }
+        
+    }
+    .fixArticle{
+        position: relative;
+        .hasCover{
+            position: absolute;
+            width:100%;
+            top:0;
+            bottom:0;
+            background: rgba(255,255,255,0.9);
+            z-index: 10;
+        }
+    }
+    
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed #bfbfbf;
+        height: 165px;
+        .upload-add{
+            fill: #ccc;
+        }
+    }
+}

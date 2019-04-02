@@ -1,0 +1,77 @@
+.slidCalendar{
+    .topBox{
+      width:100%;
+      height: 70px;
+      overflow: hidden;
+      position: relative;
+      background: #fff;
+      .top{
+        position: absolute;
+        width:300%;
+        height: 30px;
+        left: -100%;
+        top:30px;
+        margin: 0;
+        padding: 0;
+        div{
+          width: 100%;
+          height: 30px;
+          overflow: hidden;
+          span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100/21%;
+            height: 30px;
+            float: left;
+            i{
+              display: inline-block;
+              box-sizing: border-box;
+              width:30px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 30px;
+              font-style: normal;
+            }
+            i.active{
+              border: 1px solid @blue;
+              color: @blue;
+            }
+          }
+          span.is-select{
+            i{
+              background: @blue;
+              color: #fff;
+            }
+          }
+        }
+        
+      }
+      div.week{
+        width:100%;
+        height: 30px;
+        display: flex;
+        i{
+          flex: 1;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          font-style: normal;
+        }
+      }
+    }
+    .slidCalendar-header{
+        position: relative;
+        background: #fff;
+
+        span{
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top:0;
+            font-size: 14px;
+            line-height: 44px;
+        }
+    }
+  }

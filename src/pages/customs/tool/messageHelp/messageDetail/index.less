@@ -1,0 +1,154 @@
+.messageDetail{
+    .myCellBox .addPeople .weui-cell__ft{
+        color: #333;
+        text-align: left;
+    }
+    // .myCellBox .addPeople .vux-cell-primary{
+    //     flex:auto !important;
+    //     width:65px;
+    // }
+    .myCellBox .addPeople .vux-cell-primary{
+        flex: none !important;
+        -webkit-box-flex:none !important ;
+        width:65px;
+    }
+    .flex_1{
+        width:100%;
+        background: #fff;
+        position: relative;
+        .weui-cells:after{
+            display: none;
+        }
+        .weui-cells{
+            margin-top: 0;
+        }
+        .flex_1_btn{
+            overflow: hidden;
+            padding: 12px 15px;
+            div{
+                box-sizing: border-box;
+                width:75px;
+                line-height: 20px;
+                margin-top:20px; 
+                outline: none;
+                border: none;
+                color: @white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: left;
+                margin-top: 0;
+                margin-right:10px;
+                border-radius: 3px;
+                color: @blue;
+                border: 1px solid @blue;
+                padding:2px 0;
+                font-size: 14px;
+                img{
+                    width:16px;
+                    height: 16px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                    
+                }
+            }
+            .active{
+                box-sizing: border-box;
+                width:75px;
+                line-height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                
+                border-radius: 3px;
+                float: left;
+                border: 1px solid #cccccc;
+                color: #999;
+            }
+            .record{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                margin-right: 15px;
+                img{
+                    width:30px;
+                    height: 30px;
+                }
+                p{
+                    text-align: center;
+                    font-size:14px;
+                }
+                float: right;
+            }
+        }
+    }
+    
+    .btn-save{
+        position: absolute;
+        bottom:0;
+        width: 100%;
+    }
+    .weui-cells__title{
+        text-align: center;
+    }
+    .btn-box{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .myCellBox{
+        width:100%;
+        overflow: hidden;
+        .vux-cell-bd{
+            p{
+                line-height: 24px;
+            }
+        }
+        .addPeople{
+            width:80%;
+            float: left;
+            .weui-cell__ft{
+                width:70%;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap
+            }
+        }
+
+    }
+    .cell-x-icon {
+        display: block;
+        fill: #888;
+        margin-top:10px; 
+    }
+    .btn-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            flex: 1;
+            border-radius: 0;
+            height: 36px;
+            margin: 0;
+        }
+        .save{
+            border-radius: 5px 0 0 5px;
+            border-right: 1px solid #fff;
+        }
+        .send{
+            border-radius:  0 5px 5px 0;
+        }
+        button.weui-btn::after{
+            border-radius: 0;
+        }
+    }
+    .btnNosend{
+        width:100%;
+        position: absolute;
+        bottom: 0;
+        
+    }
+}

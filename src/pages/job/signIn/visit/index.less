@@ -1,0 +1,89 @@
+.tabbar-top{
+    background: #fff;
+    height: 58px;
+    position:fixed;
+    top:0;
+    &:before{
+        border-top: 0;
+    }
+    .icon {
+        width: 27px;
+        height: 27px;
+        display: inline-block;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        &.icon-promote {
+            background-image: url(~@/images/toolbar/cart.png) !important;
+        }
+        &.icon-category {
+            background-image: url(~@/images/toolbar/my.png) !important;
+        }
+        
+    }
+   
+}
+.tabbar-mian{
+    margin-top: 58px;
+}
+//通知任务ui
+#visit{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    z-index: 1000;
+    background: #efeff4;
+    overflow: hidden;
+    overflow-y: auto;
+    .visit-content{
+        position: absolute;
+        width:100%;
+        top:0;
+        bottom: 35px;
+    }
+    .list-box{
+        box-sizing: border-box;
+        .user-msg{
+            box-sizing: border-box;
+            padding:@px10 @px15;
+            display: flex;
+            align-items: center;
+            img{
+                width:@head-size;
+                height:@head-size;
+                border-radius: 60px;
+                margin-right: @px15;
+                font-size: @fs13;
+            }
+        }
+        .visit-msg{
+            box-sizing: border-box;
+            padding:@px10 @px15;
+            display: flex;
+            img{
+                width:90px;
+                height:70px;
+            }
+            div{
+                width:100%;
+                box-sizing: border-box;
+                padding: @px10;
+                font-size: @fs13;
+                .address-detail{
+                    margin-top: @px10;
+                    color:@gray3;   
+                }
+            }
+        }
+    }
+    .add-btn{
+        position: absolute;
+        bottom: 0;
+        width:100%;
+        height: 35px;
+        background: @blue;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+    }
+}
+

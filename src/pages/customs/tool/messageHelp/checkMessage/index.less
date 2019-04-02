@@ -1,0 +1,65 @@
+.checkMessage{
+    background: #fff !important;
+    .weui-cells__title{
+        text-align: center;
+    }
+    .checkMssageGroup{
+        .vux-no-group-title{
+            margin-top:0;
+        }
+    }
+    .weui-btn{
+        width:50%;
+        float: left;
+        margin-top:0 !important;
+        border-radius: 0px;
+    }
+    .btn-box{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        button{
+            line-height: 36px;
+            border-radius: 0;
+        }
+        button:nth-child(1){
+            border-radius: 5px 0px 0px 5px;
+            border-right:1px solid #fff;
+        }
+        button:nth-child(2){
+            border-radius: 0px 5px 5px 0px;
+        }
+    }
+    .weui-cell:before{
+        left:0;
+    }
+    textarea{
+        background: #fff;
+    }
+    .record-parent{
+        position: relative;
+        .record{
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            right: 15px;
+            bottom: 20px;
+            img{
+                width:30px;
+                height: 30px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .record-parent .weui-cell input:disabled,.record-parent .weui-cell input[disabled],.record-parent .weui-cell textarea:disabled{
+        color :#333;
+        -webkit-text-fill-color:#333;
+    }
+    
+}

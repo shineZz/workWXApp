@@ -1,0 +1,120 @@
+.tabbar-top{
+    background: #fff;
+    height: 58px;
+    position:fixed;
+    top:0;
+    &:before{
+        border-top: 0;
+    }
+    .icon {
+        width: 27px;
+        height: 27px;
+        display: inline-block;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        &.icon-promote {
+            background-image: url(~@/images/toolbar/cart.png) !important;
+        }
+        &.icon-category {
+            background-image: url(~@/images/toolbar/my.png) !important;
+        }
+        
+    }
+   
+}
+.tabbar-mian{
+    margin-top: 58px;
+}
+
+.evection{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    .evection-content{
+        position: absolute;
+        width:100%;
+        top:0;
+        bottom: 35px;
+        overflow-y: auto;
+    }
+    .upload-img{
+        width:100%;
+        box-sizing: border-box;
+        padding: @px10 @px15;
+        .img-box{
+            margin-top:@px10;
+            overflow: hidden;
+            div{
+                width:33%;
+                height: 33%;
+                float: left;
+            }
+            div:nth-child(1){
+                display: flex;
+                justify-content: flex-start;
+                .delimg{
+                    position: absolute;
+                    top:0;
+                    left: 42px;
+                }
+            }
+            div:nth-child(2){
+                display: flex;
+                justify-content: center;
+                .delimg{
+                    position: absolute;
+                    top:0;
+                    left: 69px;
+                }
+            }
+            div:nth-child(3){
+                display: flex;
+                justify-content: flex-end;
+                .delimg{
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                }
+            }
+            .uploadimg{
+                position: relative;
+                .upimg{
+                    width:48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+    .taster{
+        box-sizing: border-box;
+        padding: @px10;
+        overflow: hidden;
+        div{
+            width: 25%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    }
+    .add-btn-box{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        .add-btn{
+            width:100%;
+            height: 35px;
+            margin-top: 30px;
+            background: #55aef4;
+            color: #fff;
+            font-size: 14px;
+            border:none;
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@border-width: 1px;
+// 操作按钮
+.link {
+  text-align: right;
+
+  a {
+    display: inline-block;
+    width: 46px;
+    height: 40px;
+    text-align: center;
+    line-height: 46px;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.date {
+  position: absolute;
+  top: -24px;
+  // margin-left: 74px;
+  // margin-bottom: 20px;
+  width: 80px;
+  height: 15px;
+  border-radius: 48px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  color: #777;
+  background: rgba(0,0,0,0.15);
+}
+
+.time {
+  position: absolute;
+  top: 4px;
+  left: -45px;
+  font-size: 14px;
+  color: #999;
+}
+
+.task {
+  // margin-bottom: 15px;
+  // margin-top: -15px;
+  p {
+    height: 40px;
+    padding: 0 10px;
+    border: @border-width solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+  }
+
+  div {
+    height: 30px;
+    padding: 0 3px;
+    border-radius: 0 0 5px 5px;
+    line-height: 30px;
+    text-align: right;
+    background: @blue;
+
+    a {
+      list-style: none;
+      margin: 0 7px;
+      color: #fff;
+    }
+  }
+
+  .done {
+    border: @border-width solid #ccc;
+    background: #fff;
+
+    a {
+      display: none;
+    }
+  }
+}
+
+.no-more {
+  margin-top: -30px;
+  // padding-bottom: 40px;
+}
+
+.no-data {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 16px;
+
+  a {
+    list-style: none;
+    color: @blue;
+  }
+
+  .photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gray {
+    color: #666;
+  }
+}
+
+// .my-plan {
+//   margin-top:15px;
+//   padding-bottom: 20px;
+//   background: #fff;
+// }

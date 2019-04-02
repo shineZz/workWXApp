@@ -1,0 +1,67 @@
+
+.notice{
+        padding:0 @px15 0 @px15;
+        overflow: hidden;
+        li{
+            overflow: hidden;
+            background: @white;
+            padding: 0 @px15;
+            margin-bottom: @px15;
+            .hd{
+                display: flex;
+                justify-content:space-between;
+                align-items:flex-end;
+                margin: @px10 0;
+               img{
+                    width:@head-small;
+                    height: @head-small;
+                    border-radius: 10em;
+                    vertical-align: bottom;
+               } 
+               span{
+                    margin-left:@px15;
+                    color: @green;
+                    font-size: @fs14;
+                }
+                .it-arrow{
+                    height: 20px;
+                    .vux-x-icon{
+                        fill: @c-arrow;
+                    }
+                }
+            }
+            .bd{
+                display: flex;
+                align-items:center;
+                margin-bottom: @px10;
+                img{
+                    width:80px;
+                    height:80px;
+                    display: block;
+                    margin-right: @px15;
+                }
+                p{
+                    overflow : hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+            .fd{
+                display: flex;
+                align-items:center; 
+                justify-content:space-between;
+                padding:@px10 0;
+                time{
+                    border-radius: 10em;
+                    background: #dadadc;
+                    color: @white;
+                    padding:0 @px5;
+                    font-size: @fs10;
+                    display: block;
+                }
+            }
+        }
+        
+}

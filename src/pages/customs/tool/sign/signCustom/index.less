@@ -1,0 +1,217 @@
+
+.signCustom{
+    .myWu-all{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .weui-search-bar__label{
+        display: none;
+    }
+    .mylabel-all{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40%;
+    }
+    .c-1{
+        background: #bb86cc;
+    }
+    .c-2{
+        background: #00bdd1;
+    }
+    .c-3{
+        background: #4a9dfb;
+    }
+    .cell-x-icon{
+        display: block;
+        fill: #c8c8cd;
+    }
+    .cell-y-icon{
+        display: block;
+        fill: green;
+    }
+    .weui-search-bar__label{
+        text-align: left;
+        top: 4px;
+        left: 6px;
+        .weui-icon-search{
+            margin-right: 0px;
+        }
+    }
+    .search-right {
+        margin-top: 4px;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      
+      .img-kind {
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-right: 10px;
+        border-radius: 2px;
+        overflow: hidden;
+        img{
+          width:100%;
+          height: 100%;
+        }
+      }
+      
+      .title{
+          .weui-cells__title{
+              margin-top:0.3
+          }
+          .weui-cells{
+              margin-top:0;
+          }
+      }
+      .mygroup-box{
+        overflow: hidden;
+        .parentgroup{
+            display: flex;
+        }
+        .weui-cell:before{
+            display: none;
+        }
+        .mygroup-cell{
+            width: 100%;
+            display: flex;
+            .iconHeader{
+                width:20px;
+                height: 44px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                img{
+                    width:10px;
+                    height: 10px;   
+                }
+            }
+            .weui-cell{
+                flex: 1;
+                padding: 10px 7px;
+                .weui-cell__ft{
+                    width:50px;
+                    text-align: center;
+                }
+            }
+        }
+        .mygroup-icon{
+            width:44px;
+            height: 44px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            float: left;
+            .weui-icon{
+                margin-right:6px;
+            }
+            img{
+                font-size: 16px;
+            }
+        }
+        ul{
+            margin-left: 6%;
+            width:94%;
+            float: left;
+        }
+    }
+    .weui-btn{
+        width:auto;
+        margin: 0;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .selected-member{
+        flex: 1;
+        overflow: hidden;
+    }
+    .outcustom-btn-box{
+        width:100px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button.weui-btn{
+            line-height: 30px;
+        }
+    }
+    .signCustom-footer{
+        background: #fff;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width:100%;
+        .selected-member{
+            flex: 1;
+            overflow: hidden;
+            overflow-x: auto;
+        }
+        ul{
+            height: 70px;
+            box-sizing: border-box;
+            padding-left:15px ;
+            overflow: hidden;
+            padding-top:7px;
+            padding-bottom:7px;
+            li{
+                width:50px;
+                height: 60px;
+                margin-right: 5px;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                p{
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }
+                aside{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10em;
+                    color:  @white;
+                    text-align: center;
+                    margin-left: 5px;
+                    font-size:12px;
+                    margin-left: 5px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        border-radius: 10em;
+                    }
+                    span{
+                        padding:0 2px;
+                        overflow: hidden;
+                        display:block;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                        white-space: pre-line;
+                        line-height: @head-small;
+                    }
+                    .wk{
+                        line-height: 1.3em;
+                        margin-top: 5px;
+                        font-size:11px;
+                    }
+                }
+            }
+        }
+    }
+}

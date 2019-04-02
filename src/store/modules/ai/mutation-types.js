@@ -1,0 +1,23 @@
+export const TALKABOUT = 'TALKABOUT';
+export const PHONELIST = 'PHONELIST';
+export const QUERYNAMELIST = 'QUERYNAMELIST';
+export const ADDAITASK = 'ADDAITASK';
+export const SEATS = 'SEATS';
+export const QUERYLIST = 'QUERYLIST';
+export const ALLTASKSTATUS = 'ALLTASKSTATUS';
+export const ALLTASKSTART = 'ALLTASKSTART';
+export const ALLTASKEND = 'ALLTASKEND';
+export const INDUSTRYSCREENING = 'INDUSTRYSCREENING';
+export const STATISTIC = 'STATISTIC';
+export const TASKPHONELIST = 'TASKPHONELIST';
+export const TASKPHONEDETAIL = 'TASKPHONEDETAIL';
+export const DELTASK = 'DELTASK';
+export const STARTTASK = 'STARTTASK';
+export const PAUSETASK = 'PAUSETASK';
+export const ADDCUSTOMER = 'ADDCUSTOMER';
+export const READTASK = 'READTASK';
+export const INTENTIONGRADE = 'INTENTIONGRADE';
+export const OUTBOUNDWAY = 'OUTBOUNDWAY';
+export const AIIS = 'AIIS';
+export const CUSTOMERRESULT = 'CUSTOMERRESULT';
+

@@ -1,0 +1,124 @@
+
+
+.words-list{
+    ul{
+        padding:@px10 @px10 0;
+    }
+    li{
+        background:@white;        
+        border-radius:@radius5;
+        border: 1px solid #ccc;   
+        font-size: @fs12;
+        margin-bottom: @px10;
+        display: block;
+        color:@black2;
+        display: flex;
+        padding: @px10;
+        align-items: center;
+        section{
+            
+            flex: 1;
+            color: @gray3;
+            h5{
+                font-weight: normal;
+                font-size: @fs14;
+                color: @black;
+                word-break: break-all;
+                line-height: 16px;
+                margin-bottom: @px5;
+            }
+           
+            dl{
+                display:flex;
+                dt{
+                    margin-right: 2px;
+                }
+                dd{
+                    flex: 1;
+                    word-break: break-all;
+                }
+            }
+            p{
+                font-size: 11px;
+                margin-top: @px5
+            }
+            
+        }
+        .weui-icon{
+            font-size: @fs16;
+        }
+       
+    } 
+    
+}
+.nav-head{
+    ul{
+        display: flex;
+        background: @white;
+        padding: 10px 0;
+        position: relative;
+        &:after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            border-bottom: 1px solid #ccc;
+            -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        li{
+            flex: 1;
+            text-align: center;
+            position: relative;
+            i{
+                position: absolute; width: 0; height: 0; overflow: hidden; border: 7px dashed transparent; display: block;
+                border-top:7px solid @gray3;
+                left: 50%;
+                top: 6px;
+                font-size: 14px;
+                margin-left: 2em;
+            }
+        }
+        li:nth-child(2) i{
+            border: 7px dashed transparent;
+            border-bottom:7px solid @gray3;
+            top:0;
+        }
+        li:last-child{
+            i{
+                background:  url(~@/images/tool/zj.png) 100% 100%  no-repeat;
+                width:16px;
+                height:16px;
+                display: inline-block;
+                background-size: cover;
+                border: 0;
+                margin-left: 1em;
+                top:1px;
+                
+            }
+         
+        }
+        .cur{
+            color: @blue;
+            i{
+                border-top:7px solid @blue;
+            }
+        }
+        li:nth-child(2).cur i{
+            border-bottom:7px solid @blue;
+        }
+        li:last-child.cur{
+            i{
+                background:  url(~@/images/tool/zk.png) 100% 100%  no-repeat;
+                display: inline-block;
+                background-size: cover;
+                
+            }
+         
+        }
+    }
+}

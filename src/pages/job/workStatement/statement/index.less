@@ -1,0 +1,111 @@
+.report-box{   
+    header{
+        display: flex;
+        margin: @px10 @px15 0 @px15;
+        padding-bottom: @px15;
+        aside{
+            margin-right: @px10;
+            img{
+                width: @head-size;
+                height: @head-size;
+                border-radius: 10em;
+                display: block;
+            }
+        }
+        section{
+            flex-grow:1;
+            
+            h5{
+                font-size: @title-big;
+                color: @black;
+                font-weight: normal;
+                margin-bottom: @px10;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width:8em;
+            }
+            time{
+                font-size: @fs12;
+                color: @gray;
+            }
+        }
+        article{
+            font-size: @fs13;
+            height: 62px;
+            text-align: right;
+            div{
+                text-align: right;
+                strong{
+                    font-weight: normal;
+                    color: @orange;                
+                }
+                span{
+                    color: @gray;
+                    margin-left:@px5; 
+                }
+
+            }            
+            p{
+                padding: 0 @px5;
+                height: 18px;
+                line-height: 18px;
+                border: 1px solid @blue;
+                border-radius: 10em;
+                color: @blue;
+                text-align: center;
+                margin-top: 18px;
+                font-size: @fs12;
+                width: 48px;
+                display: inline-block;
+            }
+        }
+    }
+    h6{
+        font-size: @title;
+        font-weight: normal;
+        line-height: 1em;
+    }
+    .bd{
+        padding-bottom: @px5;
+    }
+    .it-box{
+        margin:@px5 @px15 0;
+        h6{
+            color: @gray;
+            padding-top: @px5;
+        }
+        p{
+            font-size: @content;
+            margin:@px5 1em @px10;
+            word-break: break-all;
+            white-space: pre-line;
+        }
+    }
+    .it-box2{
+        h6{
+            margin-left: @px15;
+            margin-bottom: @px10;
+            strong{
+                font-weight: normal;
+                color: @red2;
+            }
+        }
+        article{
+            display: flex;
+            flex-wrap: wrap;
+            padding:0 5px;
+            div{
+                width: 25%;
+                display: flex;
+                justify-content:center ;
+                margin-bottom: @px10;
+            }
+        }
+        img{
+            width: @head-size;
+            height: @head-size;
+        }
+    }
+    
+}

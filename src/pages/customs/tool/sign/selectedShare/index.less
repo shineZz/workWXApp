@@ -1,0 +1,151 @@
+.selected-share{
+    .mytool{//移动端聊天框
+        width:100%;
+        background: #fff;
+        li{
+            box-sizing: border-box;
+            padding: @px10;
+            .record-l{
+                display: flex;
+                aside{
+                    width:40px;
+                    height: 40px;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    img{
+                        width:100%;
+                        height: 100%;;
+                    }
+                }
+                section{
+                    flex: 1;
+                    position: relative;
+                    .arrow{
+                        position: absolute; 
+                        width: 0; 
+                        height: 0;
+                        overflow: hidden; 
+                        border-width: 7px 7px 7px 0;
+                        border-style: dashed;
+                        border-color: #fff #eee; 
+                        display: block;
+                        top: 15px;
+                    }
+                    div{
+                        border-radius: @radius5;
+                        padding:8px 10px;
+                        background: #eee;
+                        color: #666;
+                        line-height: 24px;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                        white-space: pre-line;
+                        max-width: 60%;
+                        margin-left: 7px;
+                        float: left;
+                    }
+                }
+            }
+            .record-r{
+                display: flex;
+                justify-content: flex-end;
+                aside{
+                    width:40px;
+                    height: 40px;
+                    border-radius: 60px;
+                    overflow: hidden;
+                    img{
+                        width:100%;
+                        height: 100%;;
+                    }
+                }
+                section{
+                    flex: 1;
+                    position: relative;
+                    .arrow{
+                        position: absolute; 
+                        width: 0; 
+                        height: 0;
+                        overflow: hidden; 
+                        border-width: 7px 0px 7px 7px;
+                        border-style: dashed;
+                        border-color: #fff #eee; 
+                        display: block;
+                        right: 0px;
+                        top: 15px;
+                    }
+                    div{
+                        border-radius: @radius5;
+                        padding:8px 10px;
+                        max-width: 60%;
+                        background: #eee;
+                        color: #666;
+                        line-height: 24px;
+                        word-wrap:break-word;
+                        word-break:break-all;
+                        white-space: pre-line;
+                        margin-right: 7px;
+                        float: right;
+                    }
+                }
+            }
+        }
+        // a{
+        //     display: block;
+        //     box-sizing: border-box;
+        //     background: @white;
+        //     border-radius: @px5;
+        // }
+        // footer{
+        //     padding:@px5  @px10;
+        //     display:block;
+        //     color: @gray3;
+        //     font-size: @fs14;
+        //     position: relative;
+        // }
+        // footer::after{
+        //     content: " ";
+        //     display: inline-block;
+        //     height: 6px;
+        //     width: 6px;
+        //     border-width: 2px 2px 0 0;
+        //     border-color: #c8c8cd;
+        //     border-style: solid;
+        //     -webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+        //     transform: matrix(.71,.71,-.71,.71,0,0);
+        //     top: -2px;
+        //     position: absolute;
+        //     top: 50%;
+        //     margin-top: -4px;
+        //     right: 10px;
+        // }
+
+    }
+    .task-header{
+        width: 100%;
+        display: flex;
+        background: #fff;
+        .header-logo{
+            width: 80px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                display: block; 
+                width: 60px;
+                height: 60px;
+                background: @blue;
+                color: #fff;
+                text-align: center;
+                line-height: 60px;
+                font-size: 20px;
+            }
+            
+        }
+        .hedader-cell{
+            // flex: 1;
+            width: 100%;
+        }
+    }
+}

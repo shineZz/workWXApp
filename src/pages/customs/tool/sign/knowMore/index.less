@@ -1,0 +1,163 @@
+.knowMore{
+    .topBox{
+      width:100%;
+      height: 70px;
+      overflow: hidden;
+      position: relative;
+      background: #fff;
+      .top{
+        position: absolute;
+        width:300%;
+        height: 30px;
+        left: -100%;
+        top:30px;
+        margin: 0;
+        padding: 0;
+        div{
+          width: 100%;
+          height: 30px;
+          overflow: hidden;
+          span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100/21%;
+            height: 30px;
+            float: left;
+            i{
+              display: inline-block;
+              box-sizing: border-box;
+              width:30px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 30px;
+              font-style: normal;
+            }
+            i.active{
+              border: 1px solid @blue;
+              color: @blue;
+            }
+          }
+          span.is-select{
+            i{
+              background: @blue;
+              color: #fff;
+            }
+          }
+        }
+        
+      }
+      div.week{
+        width:100%;
+        height: 30px;
+        display: flex;
+        i{
+          flex: 1;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          font-style: normal;
+        }
+      }
+    }
+    .knowMore-header{
+        position: relative;
+        background: #fff;
+
+        span{
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top:0;
+            font-size: 14px;
+            line-height: 44px;
+        }
+    }
+    .box{
+      box-sizing: border-box;
+      padding: 0px 10px 10px 10px;
+      .weui-cell__ft{
+        font-size:@fs14;
+      }
+      li{
+        box-sizing: border-box;
+        padding: @px5;
+        background: #fff;
+        border-radius: @radius5;
+        h5{
+          height: 30px;
+          line-height: 30px;
+          font-size: @fs14;
+          font-weight: normal;
+        }
+        div.list-detail{
+          width:100%;
+          height: 90px;
+          overflow: hidden;
+          div.no-btn{
+            width:100%;
+            height: 100%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            span{
+              height: 30px;
+              line-height: 20px;
+              display: inline-block;
+              font-size: @fs12;
+              display: flex;
+              align-items: center;
+              h6{
+                font-size: @fs14;
+                line-height: 30px;
+              }
+              p{
+                line-height: 30px;
+              }
+              i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:30px;
+                height: 30px;
+                float: left;
+              }
+              img{
+                width:20px;
+                height: 20px;
+                vertical-align: middle;
+              }
+            }
+            span:nth-child(1){
+              img{
+                width:30px;
+                height: 30px;
+                vertical-align: middle;
+              }
+            }
+            span:nth-child(2){
+              p{
+                width:70%;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                float: left;
+              }
+            }
+          }
+          div.btn-sign{
+            width:30%;
+            height: 100%;
+            float: left;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+      .hasTop{
+        margin-top:20px;
+      }
+    }
+  }

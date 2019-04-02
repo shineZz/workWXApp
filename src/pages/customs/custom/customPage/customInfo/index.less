@@ -1,0 +1,130 @@
+.next {
+    vertical-align: text-bottom;
+}
+
+.right-img {
+    a {
+        margin-right: 10px;
+    }
+
+    img {
+        width: 23px;
+        height: 23px;
+        vertical-align: middle;
+    }
+}
+
+.hasBorder.weui-btn::after {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.record-content {
+    padding: 0 15px 10px 0;
+    text-align: right;
+
+    span {
+        display: inline-block;
+    }
+
+    i {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        min-width: 50px;
+        max-width: 200px;
+        height: 35px;
+        border-radius: 3px;
+        vertical-align: bottom;
+        background: @blue url(~@/images/voice_playing_3.png) right 6px center no-repeat;
+        background-size: 14px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: -5px;
+            display: inline-block;
+            border-width: 8px 0 8px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent @blue;
+        }
+    }
+}
+
+.record-animate {
+    animation: animate-record 1s linear 200ms infinite;
+}
+
+@keyframes animate-record {
+    0% {
+        background: @blue url(~@/images/voice_playing_1.png) right 6px center no-repeat;
+        background-size: 6px;
+    }
+    30% {
+        background: @blue url(~@/images/voice_playing_1.png) right 6px center no-repeat;
+        background-size: 6px;
+    }
+    60% {
+        background: @blue url(~@/images/voice_playing_2.png) right 6px center no-repeat;
+        background-size: 10px;
+    }
+    90% {
+        background: @blue url(~@/images/voice_playing_3.png) right 6px center no-repeat;
+        background-size: 14px;
+    }
+}
+
+article{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    zoom: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    section{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 25%;
+        display: flex;
+        justify-content:center ;
+        margin-bottom: @px15;
+        .gutter-box {
+            width: @head-size;
+            height: @head-size;
+            position: relative;
+            img{
+                width: @head-size;
+                height: @head-size;
+                display: block;
+            }
+            i{
+                background: url(~@/images/job/refuse.png) no-repeat ;
+                background-size: cover;
+                width: 12px;
+                height: 12px;
+                display: block;
+                
+            }
+            span{
+                position: absolute;
+                right :0;
+                top:0;
+                padding:0 0 @px5 @px5;
+            }
+            .upload-add{
+                text-align: center;
+                border:1px dashed @gray4;
+                fill:@gray4;
+                line-height: 58px;
+                height: 58px;
+                width: 58px;
+            }
+            
+        }
+    }
+}

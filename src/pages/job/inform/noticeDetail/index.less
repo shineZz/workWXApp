@@ -1,0 +1,66 @@
+
+body{
+    overflow: hidden;
+}
+//通知任务ui
+.noticeDetail{
+    box-sizing: border-box;
+    height: 100%;
+    padding:10px;
+    z-index: 1000;
+    background: #fff;
+    overflow: hidden;
+    .noticeDetail-header{
+        box-sizing: border-box;
+        width:100%;
+        height:85px;
+        padding:10px;
+        p{
+            margin-bottom: 5px;
+        }
+        .title{
+            font-size:@fs16;
+            line-height: 24px;
+        }
+        .person{
+            font-size: @fs12;
+            color:@gray3;
+            line-height: 16px;
+        }
+        .browseNumber{
+            font-size: @fs12;
+            color:@blue;
+            line-height: 16px;
+        }
+    }
+    .notice-detail{
+        box-sizing: border-box;
+        width: 100%;
+        padding:25px;
+        overflow: hidden;
+        overflow-y: auto;
+        .content-notice{
+            width:100%;
+            p{
+                width:100%;
+                word-wrap:break-word;
+                img{
+                    max-width: 100%;
+                    width:100px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    .notice-bottom{
+        line-height:50px;
+        font-size: @fs14;
+        a{
+            color: @red;
+            text-decoration:underline;
+        } 
+    }
+}
+
+

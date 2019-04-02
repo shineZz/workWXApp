@@ -1,0 +1,170 @@
+.edit {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 19px;
+  height: 20px;
+  background: url(~@/images/custom/customer/customPage/edit.png);
+  background-size: 100%;
+}
+
+.label {
+  position: relative;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #fff;
+
+  h4 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  p {
+    // width: 90%;
+    font-size: @fs12;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: #C8C8CD;
+    transform: rotate(135deg);
+    transition: all 200ms linear;
+}
+
+.arrow-up {
+    transform: rotate(-45deg);
+}
+
+.fd{
+  overflow: hidden;
+  max-height: 74px;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: 3;
+  width: 99%;
+  span{
+      display: inline-block;
+    //   border: 1px solid @br-common;
+      margin: @px5 @px10 0 0;
+      padding:0 10px;
+      border-radius: @radius5;
+      background: @blue;
+      color: #fff;
+  }
+}
+.fd-more{
+    width: 99%;
+    span{
+        display: inline-block;
+        // border: 1px solid @br-common;
+        margin: @px5 @px10 0 0;
+        padding:0 10px;
+        border-radius: @radius5;
+        background: @blue;
+        color: #fff;
+    }
+  }
+
+.container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 105%;
+  max-height: 210px;
+  overflow: hidden;
+}
+
+.container-more {
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: 105%;
+}
+
+.share-height {
+    // width: 105%;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    padding-top: 5px;
+    width: 25%;
+    height: 60px;
+    text-align: center;
+
+    p {
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        width: 46px;
+    }
+}
+
+aside{
+    position: absolute;
+    left: 5px;
+    // display: inline-block;
+    width: @head-small;
+    height: @head-small;
+    border-radius: 10em;
+    color:  @white;
+    text-align: center;
+  
+//   margin-right: @px10;
+    // margin-top: @px10;
+    font-size:12px;
+  img{
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      border-radius: 10em;
+  }
+  span{
+      padding:0 2px;
+      overflow: hidden;
+      display:block;
+      word-wrap:break-word;
+      word-break:break-all;
+      white-space: pre-line;
+      line-height: @head-small;
+  }
+  .wk{
+      line-height: 1.3em;
+      padding-top: 5px;
+      font-size:11px;
+  }
+}
+.c-1{
+    background: #bb86cc;
+}
+.c-2{
+    background: #00bdd1;
+}
+.c-3{
+    background: #4a9dfb;
+}
+
+// 弹出框
+.popup {
+    width: 100%;
+    height:100%;
+    background-color:@bg-color;
+    overflow: hidden;
+
+    .pop-btn {
+        position: absolute;
+        bottom: 0; 
+        width: 100%;
+    }
+}

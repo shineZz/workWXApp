@@ -1,0 +1,1 @@
+export const SEGMENT_LIST = 'SEGMENT_LIST'

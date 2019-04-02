@@ -1,0 +1,335 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: @bg-color;
+  font-size: @fs12;
+  transform: translate3d(0,0,0); /*开启硬件加速*/
+  margin: 0 auto;
+  max-width: 640px;
+  font-family: PingFangSC-Regular,Microsoft YaHei,Helvetica;
+  color: #333;
+}
+.bg-fff{
+  background: @white;
+}
+textarea, input ,textarea::-webkit-input-placeholder, input::-webkit-input-placeholder{
+  font-family: PingFangSC-Regular, Microsoft YaHei, Helvetica;
+}
+input:disabled, input[disabled], textarea:disabled {
+  background: #fff !important;
+  -webkit-text-fill-color: #888;
+  opacity: 1;
+}
+// 搜索框
+.vux-search-box {
+  .weui-search-bar__form {
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+
+    .weui-search-bar__label {
+      top: 3px;
+      left: 6px;
+      text-align: left;
+    
+      span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 85%;
+      }
+    }
+
+    .weui-search-bar__box {
+      .weui-icon-search {
+        top: 1px;
+      }
+
+      .weui-search-bar__input {
+        vertical-align: bottom;
+      }
+    }
+  }
+    
+  .weui-search-bar__cancel-btn {
+    font-size: 14px;
+  }
+}
+ol, ul { list-style: none; }
+// datetime
+.vux-datetime {
+  color: @black2 !important;
+}
+// 无数据状态
+.wu-all{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;   
+    overflow: hidden; 
+    section{
+      margin:auto;
+      text-align: center;
+      color: @black;
+      font-size: @fs14;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+.wu-allA{
+  section{
+    margin:auto auto 100%;
+  }
+}
+.wu-allB{
+  position: static;
+  padding-top: 120px;
+}
+.router-view {
+  width: 100%;
+  top: 0;
+}
+.vux-pop-out-enter-active,
+.vux-pop-out-leave-active,
+.vux-pop-in-enter-active,
+.vux-pop-in-leave-active {
+  will-change: transform;
+  transition: all 500ms cubic-bezier(1, 0.85, 1, 0.85);
+  height: 100%;
+  top: 0;
+  position: absolute;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+.vux-pop-out-enter {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0)  ;
+}
+.vux-pop-out-leave-active {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0) ;
+  transition: 0ms;
+}
+.vux-pop-in-enter {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0) ;
+}
+.vux-pop-in-leave-active {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0) ;
+  transition: 0ms;
+}
+button.weui-btn{
+  line-height: 2.6;
+  &::after {
+    border: none;
+  }
+}
+.it-direction{
+flex-direction: column;
+.weui-cell__bd{
+    width: 100%;
+}
+}
+.tabnav-all{
+padding:@px15;
+}
+div.weui-cells{
+margin-top:@px15;
+}
+// 字体超出省略号
+.els {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.vux-radio-label{
+font-size: @title-big;
+}
+//阴影
+.box-shadow{
+box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2)
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+color:@gray3;
+}
+
+//按钮在最底部
+.btn-footer{
+position: fixed;bottom: 0;
+width: 100%;
+left: 0;
+z-index: 1;
+}
+.fn-mb-52{
+margin-bottom: 52px;
+position: relative;
+}
+div.pswp--supports-fs .pswp__button--fs {
+display: none ;
+}
+//表单底部有按钮
+.router-all{
+  display: flex;
+  height:100%;
+  flex-direction:column ;
+  align-content: space-between;
+  .router-box{ flex-grow: 1; overflow-y: auto;padding-bottom: 15px;}
+}
+//已在最底部
+.no-more{
+text-align: center;padding:@px10 0; font-size:@fs10; color:#aaa
+}
+//1px的颜色
+.vux-1px-t:before,.vux-1px-tb:before{
+border-top: 1px solid @br-common !important;
+color: @br-common !important;
+}
+.vux-1px-r:after{
+border-right: 1px solid @br-common !important;
+color: @br-common !important;
+}
+.vux-1px-b:after,.vux-1px-tb:after{
+border-bottom: 1px solid @br-common !important;
+color: @br-common !important;
+}
+.vux-1px-l:before{
+border-left: 1px solid @br-common !important;
+color: @br-common !important;
+}
+
+div.weui-cells:after,div.weui-cells:before{
+  border-color: @br-common;
+}
+.weui-cell:before,div.vux-cell-box:not(:first-child):before{
+  border-color: @br-common !important;
+}
+//搜索旁边有按钮样式
+.search-box-hd{
+  display: flex;
+  height: 44px;
+  .weui-search-bar:before{
+    border: 0;
+  }
+  section{
+      flex: 1;
+      position: relative;
+  }
+  aside{
+      position: relative;
+      a{
+          line-height: 44px;
+          padding-right: 8px;
+          color: @blue;
+      }
+      &:after {
+          content: " ";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          border-bottom: 1px solid #D7D6DC;
+          color: #D7D6DC;
+          -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+      }
+  }
+  .vux-search-box{
+      position: absolute !important; 
+      z-index: 3;
+      top:0;
+      
+  }
+ 
+}
+//图片
+.img-kind {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px;
+  border-radius: 2px;
+  overflow: hidden;
+  img{
+	width:100%;
+	height: 100%;
+  }
+}
+//图片为30
+.group-head{
+  .vux-label-desc{
+    color: @gray3;
+  }
+  .weui-cell:before{
+    left: 56px;
+  }
+  img{
+    width: 30px;
+    display:block;
+    height: 30px;
+    margin-right:10px;
+  }
+} 
+//group组件不需要外边距
+.group-mt0 .weui-cells{
+  margin-top: 0;
+}
+//加载清除外边距
+.loadmore-m0 .weui-loadmore{
+  margin:0 auto;
+}
+//全局加载 的时候，阴影层
+div.weui-mask_transparent{
+  z-index: 5001;
+}
+//在表单里只显示4个字
+.wh5{
+  width:5em;
+  display:block
+}
+//表单里需要
+.from-left{
+  .weui-cell__ft{
+    text-align: left;
+  }  
+}
+.form-has .has .weui-cell__ft{
+  color: #333;
+}
+div.textarea-cor{
+  padding: 0;
+  color: #333;
+}
+//一行要省略号
+.cell-word .weui-cell__ft{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+}
+//按钮一行为两个
+.buttn-more{
+  button.weui-btn{
+    display:inline-block;
+    margin-top: 0 ;
+    width: 50%;
+  }
+  button:first-child{
+    border-right: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+  }
+  button:last-child{
+    border-radius:  0 5px 5px 0;
+  }
+}
+// 数字字母换行
+.break-word {
+  word-wrap:break-word;
+  word-break:break-all;
+}
+

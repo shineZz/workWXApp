@@ -1,0 +1,51 @@
+
+.label-hd{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 16px;
+    line-height: 1em;
+    padding:@px10 @px15;
+    background: @white;
+    h4{
+        font-weight: normal;
+    }
+    a{
+        color: @blue;
+        font-size: @fs14;
+    }
+}
+.label-md{
+    padding: @px10 @px15 0;
+    h6{
+        font-size: @fs14;
+        line-height: 1em;
+        margin-bottom: @px10;
+        font-weight: normal;
+    }
+    .screening-list{
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;        
+        >div{
+            font-size: @fs12;
+            text-align: center;
+            margin:0  @px10 @px10 0;
+            border-radius: @radius5;
+            border: 1px solid @br-common;
+            display: block;
+            line-height: 20px;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space: nowrap;
+            padding:0 @px10;
+        }
+        .cur,.curr{
+            background: @blue;
+            color:@white;
+            border-color:@blue;
+        }
+    }
+}

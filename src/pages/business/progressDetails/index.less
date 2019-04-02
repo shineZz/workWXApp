@@ -1,0 +1,79 @@
+
+.progress-hd{
+    color: @gray3;
+    line-height: 36px;
+    position: relative;
+    font-size: @fs12;
+    padding:0 @px15;
+    >div:first-child{
+        position:absolute;
+        left: 15px;
+        top:0;
+    }
+    >div:nth-child(2){
+        margin:0 70px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}
+.progress-box{
+    background: @white;
+    margin: 0 @px15  @px15 @px15;
+    border-radius: @radius5;
+    border:1px solid @gray4;
+    padding:0 @px10;
+    color: @gray5;
+    font-size: @fs12;
+    strong{
+        font-weight: normal;
+        margin-right: @px5;
+    }
+    dl{
+        line-height: 24px;
+        font-size: @fs12;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        dd{
+            flex:1;
+            -webkit-flex:1
+        }
+    }
+    h5{
+        font-size: @title;
+        color: @black2;
+        padding: 0 0 @px2;
+    }
+    .vux-1px-b{
+        padding-bottom: @px10;
+    }
+    >div{
+        padding-top: @px5;
+        padding-bottom: @px5;
+    }
+    footer{
+        text-align: right;
+        padding: @px10 0;
+        a{
+            border:1px solid @red2;
+            padding: @px3 @px20;
+            color:  @red2;
+            border-radius: @radius5; 
+            margin-left: @px15;
+            display: inline-block;
+            img{
+                vertical-align: sub;
+                margin-right: @px3;
+                width: 12px;
+            }
+            span{
+                vertical-align: middle;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,90 @@
+.tabbar-top{
+    background: #fff;
+    height: 58px;
+    position:fixed;
+    top:0;
+    &:before{
+        border-top: 0;
+    }
+    .icon {
+        width: 27px;
+        height: 27px;
+        display: inline-block;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        &.icon-promote {
+            background-image: url(~@/images/toolbar/cart.png) !important;
+        }
+        &.icon-category {
+            background-image: url(~@/images/toolbar/my.png) !important;
+        }
+        
+    }
+   
+}
+.tabbar-mian{
+    margin-top: 58px;
+}
+
+.returnedMoney{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    background: #fff;
+    .returnedMoney-header{
+        width: 100%;
+        position: absolute;
+        top:0;
+        height: 20px;
+        background:#efeff4 ;
+    }
+    .returnedMoney-content{
+        position: absolute;
+        width:100%;
+        top: 20px;
+        bottom: 35px;
+        box-sizing: border-box;
+        padding:0 15px;
+        .list-box{
+            border-bottom:1px solid #eaeaea;
+            box-sizing: border-box;
+            padding:5px 0;
+            p{
+                line-height: 20px;
+                font-size: 14px;
+            }
+            span{
+                display:block;
+                overflow: hidden;
+                i{
+                    font-style: normal;
+                    color: #929597;
+                }
+                i.status{
+                    float:left;
+                }
+                i.date{
+                    float:right;
+                }
+            }
+        }
+    }
+    .add-btn-box{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        .add-btn{
+            width: 100%;
+            height: 35px;
+            background: #66aef4;
+            border: none;
+            outline: none;
+            color: #fff;
+        }
+    }
+}

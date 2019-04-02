@@ -1,0 +1,148 @@
+
+
+@-webkit-keyframes down-btn
+{
+    0%   {top:0;opacity: 0.2}
+    /*50%  {top:40%;opacity: .5}*/
+    100% {top:80%;opacity: 1}
+}
+.down-btn img{
+    -webkit-animation: down-btn 2s infinite;
+    -webkit-animation-fill-mode: both;
+}
+footer img{display: block;width: 100%;}
+
+
+.anslysis-all{
+    .flex-1{-webkit-box-flex: 1;}
+    .page{
+        display:-webkit-box;-webkit-box-orient:vertical
+    }
+    .page-2{
+        background: @white;
+        .vux-flexbox {
+            width: 100%;
+            border-bottom: 1px solid @br-shallow;
+            height: 90px;
+            padding: @px15 0;
+            line-height: 25px;
+            text-align: center;
+            img{
+                width: 3.5rem;
+                direction: block;
+            }
+            &:last-child{border: none;}
+            >div:last-child{
+                >div{
+                    width:3.5rem; display: inline-block;
+                }
+            }
+        }
+        
+        h4{margin: 0;padding: 0;}
+        span{display: block;font-size: 12px;}
+        
+    }
+    .page-3{
+        background: @white;
+        .share-people{
+            -webkit-box-flex: 1;display: -webkit-box;-webkit-box-orient:vertical;
+            img{display: block;}
+            dl{margin: 0;padding: 0;}
+            h5{   
+                 margin: 0;
+                padding:  @px18 0 0 0;
+                font-weight: 100;
+            }
+            article{ 
+                display: -webkit-box;-webkit-box-flex: 1;-webkit-box-orient:vertical;
+                div{-webkit-box-flex: 1;display: -webkit-box;}
+                dl{-webkit-box-flex: 1;display: -webkit-box;-webkit-box-align: center; -webkit-box-pack: center;-webkit-box-orient:vertical}
+                dd{margin: 20px 0;}
+            }
+        }
+    }
+    .page-4{
+        background: @white;
+        .model-ranking{
+            margin-top: @px20;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            /* width: 100%; */
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            img,span{display: block;margin: 0  @px10;}
+        }
+    }
+    .page-5{
+        background: @white;
+        .promote-city{   
+             margin-top: @px20;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            text-align: left;
+            span{display:inline-block; margin-right:  @px20;}
+        }
+    }
+
+    >div{
+        text-align: center;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        color: @gray5;
+        h3{
+            font-size: @fs20;
+            margin-top: @px20;
+        }
+        .ub { display: -webkit-box;position: relative;}
+        .overview{
+            -webkit-box-align:center;-webkit-box-pack: center;height: 120px;margin-top: 40px;margin-left: @px4;margin-right: @px4;
+            display: -webkit-box;position: relative;
+            >div{
+                padding:@px20 0 @px15;
+                span{
+                    font-size: @fs14;
+                    display: block;
+                    padding: @px5 0;
+                }
+                h4{
+                    line-height: 20px;
+                    font-size: 26px;
+                    margin: 0;
+                }
+            } 
+            .flex-1{ background: @white;}
+            .middle-num{background: #66aef4;color: @white;margin: -10px 0;padding: @px20 @px6 @px15;-webkit-box-flex: 1;}
+        }
+        .exposure{
+            margin-top: 14%;
+            text-align: center;
+            .vux-flexbox
+                {
+                    margin-top:10%;
+                    >div{
+                        padding:0 @px12;
+                        text-align: center;
+                        font-size: @fs12;
+                        article{
+                            margin-top: @px10;
+                            i{
+                                width: 12px;
+                                height: 12px;
+                                display: inline-block;
+                                vertical-align: text-top;
+                                margin-right: @px5;
+                            }
+
+                        } 
+                    }
+                }
+           
+        }
+    }
+    footer{width: 100%;position: absolute;bottom: 0;}
+    footer .down-btn{text-align: center;position: absolute;bottom: 12%;right: 0;left: 0;display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;}
+    footer .down-btn img{width: 23px;}
+}

@@ -1,0 +1,47 @@
+
+//通知任务ui
+.system{
+    padding:@px15 @px15 0 @px15;
+    overflow: hidden;
+    li{
+        overflow: hidden;
+        background: @white;
+        padding: 0 @px15;
+        margin-bottom: @px15;
+        .bd{
+            display: flex;
+            align-items:center;
+            margin: @px10 0;
+            img{
+                width:60px;
+                height:60px;
+                display: block;
+                margin-right: @px15;
+            }
+            h5{
+                font-size: @title
+            }
+            section p{
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .fd{
+            display: flex;
+            align-items:center; 
+            justify-content:space-between;
+            padding:@px10 0;
+            time{
+                border-radius: 10em;
+                background: #dadadc;
+                color: @white;
+                padding:0 @px5;
+                font-size: @fs10;
+                display: block;
+            }
+        }
+    }
+}

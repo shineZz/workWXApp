@@ -1,0 +1,109 @@
+// 滚动日历
+.scroll-box {
+  position: relative;
+  height: 76px;
+}
+
+.scroll-box-item {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border: 1px solid rgba(204, 204, 204, .7);
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  color: @blue;
+  transition: all linear 200ms;
+
+  .current {
+    display: none;
+  }
+
+  .today {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+    transition: all linear 500ms;
+  }
+
+  .middle {
+    position: absolute;
+    top: 14px;
+    width: 50px;
+    height: 25px;
+    border-bottom: 0 solid @blue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: width linear 500ms;
+
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      color: @blue !important;
+    }
+  }
+
+  p.current {
+    position: absolute;
+    top: 36px;
+    left: 16px;
+    transition: all linear 500ms;
+  }
+}
+
+.scroll-box-item-hasplan {
+  background: @blue;
+
+  .today,.middle,.current,.middle span {
+    color: #fff !important;
+  }
+}
+
+.scroll-box-item-current {
+  margin-left: 0;
+  margin-right: -10px;
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(223, 219, 219, 0.952);
+
+  span.current {
+    display: inline-block;
+  }
+
+  .middle {
+    margin: 0 5px;
+    top: 18px;
+    height: 18px;
+    border-bottom: 0.5px solid @blue;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  p.current {
+    display: block;
+    top: 36px;
+    left: 20px;
+  }
+}
+    
+.scroll-box-item-current.scroll-box-item-hasplan .middle {
+  border-bottom: 0.5px solid #fff;
+}
+
+h3 {
+  width: 100%;
+  height: 25px;
+  font-size: @title;
+  font-weight: normal;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  background: @blue;
+}
